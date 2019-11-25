@@ -32,7 +32,7 @@ int main() {
 	 //Create a multi-threaded data loader for the MNIST dataset.
 
 	auto data_loader = torch::data::make_data_loader(
-		torch::data::datasets::MNIST("C:/Users/Andrej/Documents/Visual Studio 2019/Projects/Resnet50/x64/Debug/data").map(
+		torch::data::datasets::MNIST("PATH/TO/YOUR/MNIST/DATASET").map(
 			torch::data::transforms::Stack<>()),
 		/*batch_size=*/8);
 	
